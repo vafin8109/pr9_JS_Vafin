@@ -27,7 +27,7 @@ function userAge(event) {
         nameInput.classList.add('error__input');
         flag = false;
     } else if (nameInput.value.length <= 2) {
-        nameError.innerHTML = 'Имя должно быть короче 2 символов';
+        nameError.innerHTML = 'Имя должно быть не меньше 2х символов';
         nameInput.classList.add('error__input');
         flag = false;
     }
@@ -47,6 +47,6 @@ function userAge(event) {
     }
 
     if (flag == true) {
-        alert("Ошибки отсутсвуют")
+        alert("Успех")
     }
 }
